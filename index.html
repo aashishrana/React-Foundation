@@ -20,6 +20,10 @@
 
     <script>
         const Btn = () => React.createElement("button" , {id: 'btn'}, React.createElement("span", {}, "submit"));
+
+        const rootContainer = document.getElementById("root");
+        const root = ReactDOM.createRoot(rootContainer);
+        root.render(Btn());
     </script>
   </body>
 </html>
