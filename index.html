@@ -8,6 +8,7 @@
   <body>
     <h1>Jai Shree Ram</h1>
     <div id="root"></div>
+    <div class="root2"></div>
 
     <script
       crossorigin
@@ -20,10 +21,15 @@
 
     <script>
         const Btn = () => React.createElement("button" , {id: 'btn'}, React.createElement("span", {}, "submit"));
+        const Btn2 = () => React.createElement("button" , {class : 'root2'}, React.createElement("span", {}, "SitaRam"));
 
         const rootContainer = document.getElementById("root");
         const root = ReactDOM.createRoot(rootContainer);
         root.render(Btn());
+
+        const rootContainer2 = document.getElementsByClassName("root2");
+        const rootBox = ReactDOM.createRoot(rootContainer2);
+        root2.render(Btn2());
     </script>
   </body>
 </html>
